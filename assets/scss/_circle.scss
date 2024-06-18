@@ -1,0 +1,12 @@
+@mixin circle($color, $measurement) {
+  border: 4px solid;
+  background-color: $color;
+  width: $measurement;
+  height: $measurement;
+  if $color = $background_dark {
+    border: $background_light;
+  }
+  else {
+    border: $background_dark;
+  }
+}
