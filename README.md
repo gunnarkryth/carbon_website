@@ -3,7 +3,7 @@
 - Christian
 - Jack
 # Gruppekontrakt:
-## Krav:
+### Krav:
 - Fremmøde.
 - Tilstedeværelse.
 - God arbejdsmorale.
@@ -14,7 +14,7 @@
 - "Atomic design".
 - Holde sig til opgavebeskrivelsen så godt som muligt.
 - Respektabel tone.
-### Overhold ordenlig Git workflow:
+#### Overhold ordenlig Git workflow:
  -  Fetch,
  -  pull,
  -  find issue,
