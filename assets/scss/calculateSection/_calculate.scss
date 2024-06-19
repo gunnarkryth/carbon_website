@@ -1,0 +1,116 @@
+@use "../variables";
+@use "../mixins";
+@use "../font";
+@use "../placeholder";
+@use "./circle.scss";
+
+#calculate {
+  background: variables.$background_light;
+  padding: 0rem 0.4rem;
+  position: relative;
+  @include mixins.calculateFlexbox(column, center, center, 0.7rem);
+  height: 75vh;
+
+  @media (min-width: 1300px) {
+    height: 69vh; //Nice 😎
+  }
+
+  .calculate-header {
+    text-align: center;
+    h2 {
+      color: variables.$background_dark;
+      text-transform: uppercase;
+
+      @media (min-width: 1300px) {
+        font-size: 34px;
+      }
+    }
+
+    h3 {
+      width: 350px;
+      color: variables.$text_dark;
+      font-size: 20px;
+
+      @media (min-width: 1300px) {
+        font-size: 25px;
+        width: 400px;
+      }
+    }
+  }
+
+  .calculate-container {
+    @include mixins.calculateFlexbox(column, center, center, 0.7rem);
+
+    @media (min-width: 1300px) {
+      gap: 2rem;
+    }
+
+    .co2-header {
+      width: 320px;
+      text-align: center;
+
+      @media (min-width: 1300px) {
+        padding-right: 17rem; //Not optimal code D:
+      }
+
+      p {
+        width: 340px;
+        color: variables.$text_dark;
+
+        @media (min-width: 1300px) {
+          width: 650px;
+          font-size: 19px;
+        }
+      }
+    }
+
+    .input-container {
+      @include mixins.calculateFlexbox(column, center, center, 3rem);
+
+      @media (min-width: 1300px) {
+        gap: 1.6rem;
+      }
+
+      .website-input {
+        width: 272px;
+        height: 21.61px;
+        padding: 0.2rem 0.3rem;
+        @extend %calculate-input;
+
+        @media (min-width: 1300px) {
+          width: 500px;
+          height: 34px;
+        }
+
+        &::placeholder {
+          text-align: center;
+          color: variables.$text_white;
+          font-size: 15px;
+          line-height: 13px;
+
+          @media (min-width: 1300px) {
+            text-align: left;
+            padding-left: 1.9rem;
+          }
+        }
+      }
+
+      #calculate-website {
+        @extend %calculate-input;
+        width: 150px;
+        height: 26px;
+        margin-bottom: 0.4rem;
+        text-transform: uppercase;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media (min-width: 1300px) {
+          width: 200px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}

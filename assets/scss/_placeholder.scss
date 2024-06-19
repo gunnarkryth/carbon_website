@@ -1,0 +1,8 @@
+@use "./variables";
+
+%calculate-input {
+  border-radius: 77px;
+  background: variables.$background_dark;
+  border: 0;
+  color: variables.$text_white;
+}
