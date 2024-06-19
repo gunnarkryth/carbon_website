@@ -4,16 +4,29 @@
 @use "../placeholder";
 @use "../calculateSection/circle.scss";
 
+body {
+  overflow: hidden;
+}
+
 #resources {
   padding-top: 4.5rem;
   @include mixins.calculateFlexbox(column, center, center, 0.4rem);
-  background: variables.$background_light;
+  background: variables.$background_dark;
+  overflow: hidden;
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+  }
 
   .left-side {
     .resources-header {
       h2 {
         text-align: center;
         color: variables.$text_dark;
+
+        @media (min-width: 1300px) {
+          font-size: 40px;
+        }
       }
     }
 
@@ -23,6 +36,10 @@
 
       p {
         color: variables.$text_dark;
+
+        @media (min-width: 1300px) {
+          width: 350px;
+        }
       }
 
       .resources-points {
@@ -42,15 +59,22 @@
   }
 
   .big-circle-container {
+    @media (min-width: 1300px) {
+      overflow: hidden;
+    }
+
     .big-circle {
       display: none;
 
       @media (min-width: 1300px) {
         display: block;
+        position: absolute;
+        bottom: -12.5%;
+        right: -3%;
         background: transparent;
         border-radius: 50%;
-        width: 900px;
-        height: 900px;
+        width: 400px;
+        height: 400px;
         border: 2px solid variables.$text_dark;
       }
     }
