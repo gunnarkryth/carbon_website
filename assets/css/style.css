@@ -16,6 +16,7 @@ body {
 
 #calculate {
   background: #a5dd9b;
+  padding: 0rem 0.4rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -24,14 +25,33 @@ body {
   gap: 0.7rem;
   height: 75vh;
 }
+@media (min-width: 1300px) {
+  #calculate {
+    height: 69vh;
+  }
+}
 #calculate .calculate-header {
   text-align: center;
 }
 #calculate .calculate-header h2 {
-  color: #006769;
+  color: #40a578;
+  text-transform: uppercase;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-header h2 {
+    font-size: 34px;
+  }
 }
 #calculate .calculate-header h3 {
-  width: 280px;
+  width: 350px;
+  color: #006769;
+  font-size: 20px;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-header h3 {
+    font-size: 25px;
+    width: 400px;
+  }
 }
 #calculate .calculate-container {
   display: flex;
@@ -40,10 +60,29 @@ body {
   align-items: center;
   gap: 0.7rem;
 }
+@media (min-width: 1300px) {
+  #calculate .calculate-container {
+    gap: 2rem;
+  }
+}
 #calculate .calculate-container .co2-header {
+  width: 320px;
   text-align: center;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .co2-header {
+    padding-right: 17rem;
+  }
+}
+#calculate .calculate-container .co2-header p {
   width: 340px;
   color: #006769;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .co2-header p {
+    width: 650px;
+    font-size: 19px;
+  }
 }
 #calculate .calculate-container .input-container {
   display: flex;
@@ -52,10 +91,21 @@ body {
   align-items: center;
   gap: 3rem;
 }
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container {
+    gap: 1.6rem;
+  }
+}
 #calculate .calculate-container .input-container .website-input {
   width: 272px;
   height: 21.61px;
   padding: 0.2rem 0.3rem;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container .website-input {
+    width: 500px;
+    height: 34px;
+  }
 }
 #calculate .calculate-container .input-container .website-input::-moz-placeholder {
   text-align: center;
@@ -75,11 +125,34 @@ body {
   font-size: 15px;
   line-height: 13px;
 }
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container .website-input::-moz-placeholder {
+    text-align: left;
+    padding-left: 1.9rem;
+  }
+  #calculate .calculate-container .input-container .website-input:-ms-input-placeholder {
+    text-align: left;
+    padding-left: 1.9rem;
+  }
+  #calculate .calculate-container .input-container .website-input::placeholder {
+    text-align: left;
+    padding-left: 1.9rem;
+  }
+}
 #calculate .calculate-container .input-container #calculate-website {
   width: 150px;
   height: 26px;
   margin-bottom: 0.4rem;
   text-transform: uppercase;
+}
+#calculate .calculate-container .input-container #calculate-website:hover {
+  cursor: pointer;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container #calculate-website {
+    width: 200px;
+    height: 30px;
+  }
 }
 #calculate .calculate-container .green-check-circle {
   position: absolute;
@@ -91,9 +164,24 @@ body {
   height: 85px;
   border: 9px solid #a5dd9b;
 }
+@media (min-width: 1300px) {
+  #calculate .calculate-container .green-check-circle {
+    left: 3%;
+    bottom: -14%;
+    width: 175px;
+    height: 175px;
+    border: 6px solid #a5dd9b;
+  }
+}
 #calculate .calculate-container .green-check-circle h3 {
   text-align: center;
   padding-top: 0.25rem;
   color: #e6ff94;
   font-size: 19px;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .green-check-circle h3 {
+    padding-top: 3.7rem;
+    font-weight: 300;
+  }
 }
