@@ -205,3 +205,51 @@ body {
   width: 70%;
   background: #40a578;
 }
+
+#resources {
+  padding-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  background: #a5dd9b;
+}
+#resources .left-side .resources-header h2 {
+  text-align: center;
+  color: #006769;
+}
+#resources .left-side .resources-info {
+  padding: 0rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+#resources .left-side .resources-info p {
+  color: #006769;
+}
+#resources .left-side .resources-info .resources-points {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+#resources .left-side .resources-info .resources-points li a {
+  color: #006769;
+  font-size: 17px;
+}
+#resources .big-circle-container .big-circle {
+  display: none;
+}
+@media (min-width: 1300px) {
+  #resources .big-circle-container .big-circle {
+    display: block;
+    background: transparent;
+    border-radius: 50%;
+    width: 900px;
+    height: 900px;
+    border: 2px solid #006769;
+  }
+}

@@ -1,0 +1,58 @@
+@use "../variables";
+@use "../mixins";
+@use "../font";
+@use "../placeholder";
+@use "../calculateSection/circle.scss";
+
+#resources {
+  padding-top: 4.5rem;
+  @include mixins.calculateFlexbox(column, center, center, 0.4rem);
+  background: variables.$background_light;
+
+  .left-side {
+    .resources-header {
+      h2 {
+        text-align: center;
+        color: variables.$text_dark;
+      }
+    }
+
+    .resources-info {
+      padding: 0rem 5rem;
+      @include mixins.calculateFlexbox(column, center, center, 0.6rem);
+
+      p {
+        color: variables.$text_dark;
+      }
+
+      .resources-points {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+
+        li {
+          a {
+            color: variables.$text_dark;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+
+  .big-circle-container {
+    .big-circle {
+      display: none;
+
+      @media (min-width: 1300px) {
+        display: block;
+        background: transparent;
+        border-radius: 50%;
+        width: 900px;
+        height: 900px;
+        border: 2px solid variables.$text_dark;
+      }
+    }
+  }
+}
