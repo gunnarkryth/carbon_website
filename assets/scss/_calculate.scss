@@ -1,0 +1,83 @@
+@use "./variables";
+@use "./mixins";
+@use "./font";
+@use "./placeholder";
+
+#calculate {
+  background: variables.$background_light;
+  position: relative;
+  @include mixins.calculateFlexbox(column, center, center, 0.7rem);
+  height: 75vh;
+
+  .calculate-header {
+    text-align: center;
+    h2 {
+      color: variables.$text_dark;
+    }
+
+    h3 {
+      width: 280px;
+    }
+  }
+
+  .calculate-container {
+    // @include mixins.calculateFlexbox(column, center, center, 0.6rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    .co2-header {
+      text-align: center;
+      width: 340px;
+      color: variables.$text_dark;
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      .website-input {
+        width: 272px;
+        height: 21.61px;
+        padding: 0.2rem 0.3rem;
+        @extend %calculate-input;
+        &::placeholder {
+          text-align: center;
+          color: variables.$text_white;
+          font-size: 15px;
+          line-height: 13px;
+        }
+      }
+
+      #calculate-website {
+        @extend %calculate-input;
+        width: 150px;
+        height: 26px;
+        margin-bottom: 0.4rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .green-check-circle {
+      position: absolute;
+      left: 6%;
+      bottom: -8%;
+      background: variables.$background_dark;
+      border-radius: 50%;
+      width: 85px;
+      height: 85px;
+      border: 9px solid #a5dd9b;
+
+      h3 {
+        text-align: center;
+        padding-top: 0.25rem;
+        color: variables.$text_light;
+        font-size: 19px;
+      }
+    }
+  }
+}

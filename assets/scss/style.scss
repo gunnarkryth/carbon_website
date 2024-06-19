@@ -1,7 +1,7 @@
-@import "./variables";
-@import "./mixins";
-@import "./font";
-@import "./nav";
-@import "./section";
-@import "./footer";
-@import ".";
+@use "./variables";
+@use "./mixins";
+@use "./font";
+@use "./nav";
+@use "./section";
+@use "./footer";
+@use "../scss/calculate.scss";

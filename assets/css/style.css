@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+  border-radius: 77px;
+  background: #40a578;
+  border: 0;
+  color: #ffffff;
+}
+
+#calculate {
+  background: #a5dd9b;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  height: 75vh;
+}
+#calculate .calculate-header {
+  text-align: center;
+}
+#calculate .calculate-header h2 {
+  color: #006769;
+}
+#calculate .calculate-header h3 {
+  width: 280px;
+}
+#calculate .calculate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+#calculate .calculate-container .co2-header {
+  text-align: center;
+  width: 340px;
+  color: #006769;
+}
+#calculate .calculate-container .input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+#calculate .calculate-container .input-container .website-input {
+  width: 272px;
+  height: 21.61px;
+  padding: 0.2rem 0.3rem;
+}
+#calculate .calculate-container .input-container .website-input::-moz-placeholder {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 13px;
+}
+#calculate .calculate-container .input-container .website-input:-ms-input-placeholder {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 13px;
+}
+#calculate .calculate-container .input-container .website-input::placeholder {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 13px;
+}
+#calculate .calculate-container .input-container #calculate-website {
+  width: 150px;
+  height: 26px;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+#calculate .calculate-container .green-check-circle {
+  position: absolute;
+  left: 6%;
+  bottom: -8%;
+  background: #40a578;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  border: 9px solid #a5dd9b;
+}
+#calculate .calculate-container .green-check-circle h3 {
+  text-align: center;
+  padding-top: 0.25rem;
+  color: #e6ff94;
+  font-size: 19px;
+}

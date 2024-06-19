@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carbon emission</title>
     <link rel="stylesheet" href="./assets/scss/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/app.js"></script>
   </head>
   <body>
@@ -13,7 +14,33 @@
     </header>
     <main>
       <section id="landing_page"></section>
-      <section id="calculate"></section>
+      <section id="calculate">
+        <header class="calculate-header">
+          <h2>Did You Know</h2>
+          <h3>The internet alone consumes 416.2TWh electricity per year</h3>
+        </header>
+        <div class="calculate-container">
+          <header class="co2-header">
+            <p>
+              To begin calculation how much CO2 your website uses enter the URL
+              in the field below and hit calculate
+            </p>
+          </header>
+          <span class="input-container">
+            <input
+              class="website-input"
+              type="text"
+              placeholder="www.mywebsite.com"
+            />
+            <button id="calculate-website">Calculate</button>
+          </span>
+          <div class="calculate-result"></div>
+
+          <span class="green-check-circle">
+            <h3>Green Check</h3>
+          </span>
+        </div>
+      </section>
       <section id="green_check"></section>
       <section id="resources"></section>
       <section id="the_mission"></section>
