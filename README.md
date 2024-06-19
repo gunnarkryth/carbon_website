@@ -1,9 +1,13 @@
 # Gruppe:
+
 - Gunnar
 - Christian
 - Jack
+
 # Gruppekontrakt:
+
 ### Krav:
+
 - Fremmøde.
 - Tilstedeværelse.
 - God arbejdsmorale.
@@ -14,13 +18,15 @@
 - "Atomic design".
 - Holde sig til opgavebeskrivelsen så godt som muligt.
 - Respektabel tone.
+
 #### Overhold ordenlig Git workflow:
- -  Fetch,
- -  pull,
- -  find issue,
- -  fix issue,
- -  push,
- -  tjek med gruppemedlemmer,
- -  solve merge conflicts,
- -  commit,
- -  repeat
+
+- Fetch,
+- pull,
+- find issue,
+- fix issue,
+- push,
+- tjek med gruppemedlemmer,
+- solve merge conflicts,
+- commit,
+- repeat

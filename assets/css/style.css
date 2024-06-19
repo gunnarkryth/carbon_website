@@ -190,3 +190,18 @@ body {
     height: 30px;
   }
 }
+
+#calculate-result {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  width: 70%;
+  background: #40a578;
+}

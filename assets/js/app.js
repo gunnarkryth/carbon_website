@@ -1,4 +1,3 @@
-import { getCO2Data } from "./Components/getCO2Data.js";
+import { searchCO2 } from "./Components/CO2/searchCO2.js";
 
-//Random ip adresse fra api docs
-getCO2Data("35.187.144.0");
+searchCO2();
