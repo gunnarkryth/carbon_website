@@ -1,7 +1,8 @@
-@use "./variables";
-@use "./mixins";
-@use "./font";
-@use "./placeholder";
+@use "../variables";
+@use "../mixins";
+@use "../font";
+@use "../placeholder";
+@use "./circle.scss";
 
 #calculate {
   background: variables.$background_light;
@@ -38,12 +39,7 @@
   }
 
   .calculate-container {
-    // @include mixins.calculateFlexbox(column, center, center, 0.6rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.7rem;
+    @include mixins.calculateFlexbox(column, center, center, 0.7rem);
 
     @media (min-width: 1300px) {
       gap: 2rem;
@@ -69,11 +65,7 @@
     }
 
     .input-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
+      @include mixins.calculateFlexbox(column, center, center, 3rem);
 
       @media (min-width: 1300px) {
         gap: 1.6rem;
@@ -117,37 +109,6 @@
         @media (min-width: 1300px) {
           width: 200px;
           height: 30px;
-        }
-      }
-    }
-
-    .green-check-circle {
-      position: absolute;
-      left: 6%;
-      bottom: -8%;
-      background: variables.$background_dark;
-      border-radius: 50%;
-      width: 85px;
-      height: 85px;
-      border: 9px solid variables.$background_light;
-
-      @media (min-width: 1300px) {
-        left: 3%;
-        bottom: -14%;
-        width: 175px;
-        height: 175px;
-        border: 6px solid variables.$background_light;
-      }
-
-      h3 {
-        text-align: center;
-        padding-top: 0.25rem;
-        color: variables.$text_light;
-        font-size: 19px;
-
-        @media (min-width: 1300px) {
-          padding-top: 3.7rem;
-          font-weight: 300;
         }
       }
     }

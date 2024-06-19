@@ -14,6 +14,42 @@ body {
   color: #ffffff;
 }
 
+.green-check-circle,
+.section-circle {
+  position: absolute;
+  left: 6%;
+  bottom: -8%;
+  background: #40a578;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  border: 9px solid #a5dd9b;
+}
+@media (min-width: 1300px) {
+  .green-check-circle,
+.section-circle {
+    left: 3%;
+    bottom: -14%;
+    width: 175px;
+    height: 175px;
+    border: 6px solid #a5dd9b;
+  }
+}
+.green-check-circle h3,
+.section-circle h3 {
+  text-align: center;
+  padding-top: 0.25rem;
+  color: #e6ff94;
+  font-size: 19px;
+}
+@media (min-width: 1300px) {
+  .green-check-circle h3,
+.section-circle h3 {
+    padding-top: 3.7rem;
+    font-weight: 300;
+  }
+}
+
 #calculate {
   background: #a5dd9b;
   padding: 0rem 0.4rem;
@@ -152,36 +188,5 @@ body {
   #calculate .calculate-container .input-container #calculate-website {
     width: 200px;
     height: 30px;
-  }
-}
-#calculate .calculate-container .green-check-circle {
-  position: absolute;
-  left: 6%;
-  bottom: -8%;
-  background: #40a578;
-  border-radius: 50%;
-  width: 85px;
-  height: 85px;
-  border: 9px solid #a5dd9b;
-}
-@media (min-width: 1300px) {
-  #calculate .calculate-container .green-check-circle {
-    left: 3%;
-    bottom: -14%;
-    width: 175px;
-    height: 175px;
-    border: 6px solid #a5dd9b;
-  }
-}
-#calculate .calculate-container .green-check-circle h3 {
-  text-align: center;
-  padding-top: 0.25rem;
-  color: #e6ff94;
-  font-size: 19px;
-}
-@media (min-width: 1300px) {
-  #calculate .calculate-container .green-check-circle h3 {
-    padding-top: 3.7rem;
-    font-weight: 300;
   }
 }
