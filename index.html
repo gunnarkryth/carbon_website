@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/scss/style.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/app.js" type="module" defer></script>
+    <script src="./assets/js/Components/CO2/green check.js"defer></script>
   </head>
   <body>
     <header>
@@ -57,7 +58,34 @@
           </span>
         </div>
       </section>
-      <section id="green_check"></section>
+      <section class="wrapper">
+        <div class="green-check">GREEN CHECK</div>
+        <header class="info-header">
+          <span class="sub-text">DID YOU KNOW</span>
+          <br />
+          <br />
+          <span class="main-text">
+            We love green energy and renewable
+            <br />
+            energy sources. Does your provider?
+          </span>
+        </header>
+        <p class="description">
+          Enter a website URL in the field below to check if the site providers
+          <br />
+          use green and renewable energy sources for hosting
+        </p>
+        <form class="url-check-form">
+          <input
+            class="url-input"
+            type="text"
+            id="urlInput"
+            placeholder="www.mywebsite.com"
+            aria-label="Website URL"
+          />
+        </form>
+        <button type="submit" class="check-button">BEGIN</button>
+      </section>
       <section id="resources"></section>
       <section id="the_mission"></section>
       <footer></footer>
