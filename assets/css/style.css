@@ -27,7 +27,7 @@ body {
 }
 @media (min-width: 1300px) {
   .green-check-circle,
-.section-circle {
+  .section-circle {
     left: 3%;
     bottom: -14%;
     width: 175px;
@@ -44,7 +44,7 @@ body {
 }
 @media (min-width: 1300px) {
   .green-check-circle h3,
-.section-circle h3 {
+  .section-circle h3 {
     padding-top: 3.7rem;
     font-weight: 300;
   }
@@ -149,12 +149,6 @@ body {
   font-size: 15px;
   line-height: 13px;
 }
-#calculate .calculate-container .input-container .website-input:-ms-input-placeholder {
-  text-align: center;
-  color: #ffffff;
-  font-size: 15px;
-  line-height: 13px;
-}
 #calculate .calculate-container .input-container .website-input::placeholder {
   text-align: center;
   color: #ffffff;
@@ -163,10 +157,6 @@ body {
 }
 @media (min-width: 1300px) {
   #calculate .calculate-container .input-container .website-input::-moz-placeholder {
-    text-align: left;
-    padding-left: 1.9rem;
-  }
-  #calculate .calculate-container .input-container .website-input:-ms-input-placeholder {
     text-align: left;
     padding-left: 1.9rem;
   }
@@ -204,10 +194,6 @@ body {
   gap: 0.7rem;
   width: 70%;
   background: #40a578;
-}
-
-body {
-  overflow: hidden;
 }
 
 #resources {
@@ -271,9 +257,6 @@ body {
 @media (min-width: 1300px) {
   #resources .big-circle-container .big-circle {
     display: block;
-    position: absolute;
-    bottom: -12.5%;
-    right: -3%;
     background: transparent;
     border-radius: 50%;
     width: 400px;

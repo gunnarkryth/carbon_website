@@ -4,10 +4,6 @@
 @use "../placeholder";
 @use "../calculateSection/circle.scss";
 
-body {
-  overflow: hidden;
-}
-
 #resources {
   padding-top: 4.5rem;
   @include mixins.calculateFlexbox(column, center, center, 0.4rem);
@@ -68,9 +64,9 @@ body {
 
       @media (min-width: 1300px) {
         display: block;
-        position: absolute;
-        bottom: -12.5%;
-        right: -3%;
+        // position: absolute;
+        // bottom: -12.5%;
+        // right: -3%;
         background: transparent;
         border-radius: 50%;
         width: 400px;
