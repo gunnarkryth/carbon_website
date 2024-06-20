@@ -15,6 +15,24 @@
     height: 69vh; //Nice 😎
   }
 
+  .carbon-circle {
+    position: absolute;
+    left: 4%;
+    top: -14%;
+    background: variables.$background_light;
+    border-radius: 50%;
+    width: 175px;
+    height: 175px;
+    border: 6px solid variables.$background_dark;
+    font-weight: 300;
+  
+      h2 {
+        text-align: center;
+        padding-top: 3.3rem;
+        color: variables.$text_dark;
+      }
+    }
+
   .calculate-header {
     text-align: center;
     h2 {
