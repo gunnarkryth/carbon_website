@@ -3,30 +3,31 @@
 .green-check-circle,
 .section-circle {
   position: absolute;
-  left: 6%;
-  bottom: -8%;
+  left: 2%;
+  bottom: -12%;
   background: variables.$background_dark;
   border-radius: 50%;
-  width: 85px;
-  height: 85px;
+  width: 175px;
+  height: 175px;
   border: 9px solid variables.$background_light;
 
-  @media (min-width: 1300px) {
+  @media (max-width: 991px) {
     left: 3%;
-    bottom: -14%;
-    width: 175px;
-    height: 175px;
+    bottom: -11%;
+    width: 100px;
+    height: 100px;
     border: 6px solid variables.$background_light;
   }
 
   h3 {
     text-align: center;
-    padding-top: 0.25rem;
+    padding-top: 3.5rem;
     color: variables.$background_light;
     font-size: 19px;
 
-    @media (min-width: 1300px) {
-      padding-top: 3.7rem;
+    @media (max-width: 991px) {
+      text-align: center;
+      padding-top: 0.5rem;
       font-weight: 300;
     }
   }

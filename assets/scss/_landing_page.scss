@@ -7,6 +7,7 @@
 }
 .circle_container {
   h1 {
+    z-index: 9999;
     position: absolute;
     top: 33%;
     left: 33%;
@@ -18,11 +19,11 @@
     font-size: 128px;
     @media (max-width: 991px) {
       & {
-        z-index: 99;
         font-size: 2rem;
         background: red; //Text is there but not showing?
         top: 40%;
         left: 40%;
+        color: $text_light;
         width: 9rem;
       }
     }

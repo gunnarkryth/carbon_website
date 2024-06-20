@@ -63,11 +63,25 @@
         height: 175px;
         border: 6px solid variables.$background_dark;
         font-weight: 300;
+        
+        @media (max-width: 991px) {
+            left: 3%;
+            bottom: -2%;
+            width: 100px;
+            height: 100px;
+            border: 6px solid variables.$background_light;
+          }
 
     h2 {
       text-align: center;
       padding-top: 3.3rem;
       color: variables.$text_dark;
+
+      @media (max-width: 991px) {
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 300;
+      }
      }
     }
 
@@ -81,11 +95,25 @@
         height: 175px;
         border: 6px solid variables.$background_light;
 
+        @media (max-width: 991px) {
+            left: 3%;
+            bottom: -15%;
+            width: 100px;
+            height: 100px;
+            border: 6px solid variables.$background_light;
+          }
+
     h2 {
       text-align: center;
       padding-top: 3.3rem;
       color: variables.$background_light;
       font-weight: 300;
+
+      @media (max-width: 991px) {
+        text-align: center;
+        padding-top: 0.5rem;
+        font-weight: 300;
+      }
      }
     }
 }
