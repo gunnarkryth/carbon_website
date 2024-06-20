@@ -299,6 +299,7 @@ body {
 }
 
 .url-input {
+  border: none;
   font-family: var(--font-family);
   border-radius: 77px;
   background-color: var(--url-input-bg-color);
@@ -321,6 +322,7 @@ body {
 }
 
 .check-button {
+  border: none;
   font-family: var(--font-family);
   border-radius: 77px;
   background-color: var(--check-button-bg-color);
