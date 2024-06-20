@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   font-style: normal;
   font-weight: 400;
@@ -15,6 +17,14 @@ nav {
 nav * {
   color: #006769;
   text-decoration: none;
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
 }
 
 #calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
@@ -35,6 +45,7 @@ nav * {
   height: 85px;
   border: 9px solid #a5dd9b;
 }
+
 @media (min-width: 1300px) {
   .green-check-circle,
   .section-circle {
@@ -52,6 +63,7 @@ nav * {
   color: #e6ff94;
   font-size: 19px;
 }
+
 @media (min-width: 1300px) {
   .green-check-circle h3,
   .section-circle h3 {
@@ -59,7 +71,6 @@ nav * {
     font-weight: 300;
   }
 }
-
 #calculate {
   background: #a5dd9b;
   padding: 0rem 0.4rem;
@@ -189,6 +200,21 @@ nav * {
     width: 200px;
     height: 30px;
   }
+}
+
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+  border-radius: 77px;
+  background: #40a578;
+  border: 0;
+  color: #ffffff;
 }
 
 #calculate-result {
