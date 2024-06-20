@@ -1,3 +1,33 @@
+@mixin round {
+  border-radius: 50%;
+}
+
+@mixin position($x, $y) {
+  position: absolute;
+
+  @if $x == left {
+    left: 0;
+  }
+  @if $x == middle {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $x == right {
+    right: 0;
+  }
+
+  @if $y == top {
+    top: 0;
+  }
+  @if $y == middle {
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @if $y == bottom {
+    bottom: 0;
+  }
+}
+
 @mixin calculateFlexbox(
   $direction: row,
   $justifty: center,
