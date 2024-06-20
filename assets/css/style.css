@@ -39,16 +39,20 @@ nav * {
   top: 33%;
   left: 33%;
   transform: translate(-50%, -50%);
-  z-index: 11;
   width: 3em;
   -webkit-text-stroke-color: #40a578;
   -webkit-text-stroke-width: 4px;
   color: #e6ff94;
   font-size: 128px;
 }
-@media (max-width: 400px) {
+@media (max-width: 991px) {
   .circle_container h1 {
-    font-size: 1rem;
+    z-index: 99;
+    font-size: 2rem;
+    background: red;
+    top: 40%;
+    left: 40%;
+    width: 9rem;
   }
 }
 .circle_container .circle1 {
@@ -63,6 +67,16 @@ nav * {
   height: 760px;
   border: #a5dd9b 4px solid;
   border-color: #e6ff94;
+}
+@media (max-width: 991px) {
+  .circle_container .circle1 {
+    z-index: 95;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+  }
 }
 .circle_container .circle2 {
   top: 67%;
@@ -81,9 +95,24 @@ nav * {
   align-items: center;
   border-color: #e6ff94;
 }
+@media (max-width: 991px) {
+  .circle_container .circle2 {
+    z-index: 999;
+    top: 67%;
+    left: 67%;
+    width: 150px;
+    height: 150px;
+    font-size: 1rem;
+  }
+}
 .circle_container .circle2 p {
   margin-top: 7rem;
   text-align: center;
+}
+@media (max-width: 991px) {
+  .circle_container .circle2 p {
+    margin-top: 4.3rem;
+  }
 }
 
 footer {

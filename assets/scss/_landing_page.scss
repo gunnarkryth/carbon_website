@@ -11,14 +11,20 @@
     top: 33%;
     left: 33%;
     transform: translate(-50%, -50%);
-    z-index: 11;
     width: 3em;
     -webkit-text-stroke-color: $background_dark;
     -webkit-text-stroke-width: 4px;
     color: $text_light;
     font-size: 128px;
-    @media (max-width: 400px) {
-      font-size: 1rem;
+    @media (max-width: 991px) {
+      & {
+        z-index: 99;
+        font-size: 2rem;
+        background: red; //Text is there but not showing?
+        top: 40%;
+        left: 40%;
+        width: 9rem;
+      }
     }
   }
   .circle1 {
@@ -27,6 +33,17 @@
     transform: translate(-50%, -50%);
     @include circle($background_dark, 760px);
     border-color: $text_light;
+    
+    @media (max-width: 991px) {
+      & {
+        z-index: 95;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+        height: 350px;
+      }
+    }
   }
   .circle2 {
     top: 67%;
@@ -38,9 +55,24 @@
     justify-content: center;
     align-items: center;
     border-color: $text_light;
+
+    @media (max-width: 991px) {
+      & {
+        z-index: 999;
+        top: 67%;
+        left: 67%;
+        width: 150px;
+        height: 150px;
+        font-size: 1rem;
+      }
+    }
     p {
       margin-top: 7rem;
       text-align: center;
+
+      @media (max-width: 991px) {
+        margin-top: 4.3rem;
+      }
     }
   }
 }
