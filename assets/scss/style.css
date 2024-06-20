@@ -80,6 +80,51 @@ nav * {
   text-align: center;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  background-color: #40a578;
+  padding: 0 7vw 0 7vw;
+  color: #ffffff;
+  color: #ffffff;
+}
+footer #contact_info_container ul {
+  padding: 0;
+  list-style: none;
+}
+footer #contact_info_container ul li {
+  font-style: normal;
+}
+footer #made_possible_by_container {
+  color: #ffffff;
+}
+footer #newsletter_container input {
+  display: block;
+  margin: 5px;
+  border: none;
+  border-radius: 1000px;
+  background-color: #e6ff94;
+  padding: 5px 1rem 5px 1rem;
+  color: #40a578;
+}
+footer #newsletter_container button {
+  margin: 5px;
+  border: 1px solid #e6ff94;
+  border-radius: 1000px;
+  background: none;
+  padding: 5px 1rem 5px 1rem;
+  color: #e6ff94;
+}
+footer #logo_container .circle3 {
+  position: absolute;
+  z-index: 10;
+  border-radius: 50%;
+  background-color: #40a578;
+  width: 300px;
+  height: 300px;
+  border: #a5dd9b 4px solid;
+}
+
 /*green check*/
 /*green check*/
 body {
