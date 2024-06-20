@@ -84,7 +84,8 @@ body {
   padding: 0;
 }
 
-#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+#calculate .calculate-container .input-container .website-input,
+#calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;
   border: 0;
@@ -221,7 +222,10 @@ body {
     height: 34px;
   }
 }
-#calculate .calculate-container .input-container .website-input::-moz-placeholder {
+#calculate
+  .calculate-container
+  .input-container
+  .website-input::-moz-placeholder {
   text-align: center;
   color: #ffffff;
   font-size: 15px;
@@ -234,7 +238,10 @@ body {
   line-height: 13px;
 }
 @media (min-width: 1300px) {
-  #calculate .calculate-container .input-container .website-input::-moz-placeholder {
+  #calculate
+    .calculate-container
+    .input-container
+    .website-input::-moz-placeholder {
     text-align: left;
     padding-left: 1.9rem;
   }
@@ -269,7 +276,8 @@ body {
   padding: 0;
 }
 
-#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+#calculate .calculate-container .input-container .website-input,
+#calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;
   border: 0;
@@ -336,6 +344,7 @@ body {
   }
 }
 .wrapper .url-input {
+  border: none;
   font-family: "Ubuntu Mono", sans-serif;
   border-radius: 77px;
   background-color: #a5dd9b;
@@ -356,6 +365,7 @@ body {
   }
 }
 .wrapper .check-button {
+  border: none;
   font-family: "Ubuntu Mono", sans-serif;
   border-radius: 77px;
   background-color: #a5dd9b;
