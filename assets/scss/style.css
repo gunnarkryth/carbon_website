@@ -105,6 +105,11 @@ footer #newsletter_container input {
   border-radius: 1000px;
   background-color: #e6ff94;
   padding: 5px 1rem 5px 1rem;
+}
+footer #newsletter_container input::-moz-placeholder {
+  color: #40a578;
+}
+footer #newsletter_container input::placeholder {
   color: #40a578;
 }
 footer #newsletter_container button {
@@ -340,4 +345,100 @@ body {
   gap: 0.7rem;
   width: 70%;
   background: #40a578;
+}
+
+/*green check*/
+/*green check*/
+.wrapper {
+  align-items: center;
+  background-color: #40a578;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #e6ff94;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Ubuntu Mono", sans-serif;
+  padding: 14px 80px 80px 21px;
+}
+@media (max-width: 991px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+.wrapper .info-header {
+  margin-top: -3px;
+  padding-right: 15px;
+  color: black;
+  font-weight: normal;
+  font-size: 48px;
+  font-family: "Inter", sans-serif;
+}
+@media (max-width: 991px) {
+  .wrapper .info-header {
+    max-width: 100%;
+    margin-top: 40px;
+    font-size: 40px;
+  }
+}
+.wrapper .description {
+  font-family: "Ubuntu Mono", sans-serif;
+  margin-top: 59px;
+}
+@media (max-width: 991px) {
+  .wrapper .description {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+.wrapper .url-input {
+  font-family: "Ubuntu Mono", sans-serif;
+  border-radius: 77px;
+  background-color: #a5dd9b;
+  margin-top: 84px;
+  width: 765px;
+  max-width: 100%;
+  align-items: start;
+  color: #006769;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 22px 53px;
+}
+@media (max-width: 991px) {
+  .wrapper .url-input {
+    margin-top: 40px;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+.wrapper .check-button {
+  font-family: "Ubuntu Mono", sans-serif;
+  border-radius: 77px;
+  background-color: #a5dd9b;
+  margin-top: 36px;
+  width: 234px;
+  max-width: 100%;
+  align-items: center;
+  color: #006769;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 13px 60px;
+}
+@media (max-width: 991px) {
+  .wrapper .check-button {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+.wrapper .sub-text {
+  color: rgb(64, 165, 120);
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Ubuntu Mono", sans-serif;
+}
+.wrapper .main-text {
+  color: rgb(230, 255, 148);
+  font-weight: normal;
+  font-size: 36px;
+  font-family: "Ubuntu Mono", sans-serif;
 }/*# sourceMappingURL=style.css.map */
