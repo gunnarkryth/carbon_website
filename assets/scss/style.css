@@ -1,1 +1,24 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+body * {
+  margin: 0;
+  padding: 0;
+}
+
+#landing_page {
+  position: relative;
+  z-index: 0;
+  background-color: #40a578;
+  width: 100%;
+  height: 90vh;
+}/*# sourceMappingURL=style.css.map */
