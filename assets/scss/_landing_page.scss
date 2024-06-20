@@ -1,0 +1,41 @@
+#landing_page {
+  position: relative;
+  z-index: 0;
+  background-color: $background_dark;
+  width: 100%;
+  height: 90vh;
+}
+.circle_container {
+  h1 {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    width: 3em;
+    color: $text_light;
+    font-size: 128px;
+  }
+  .circle1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include circle($background_dark, 760px);
+    border-color: $text_light;
+  }
+  .circle2 {
+    top: 67%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    color: $text_light;
+    font-size: 2rem;
+    @include circle($background_dark, 300px);
+    border-color: $text_light;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin-top: 7rem;
+    text-align: center;
+    }
+  }
+}

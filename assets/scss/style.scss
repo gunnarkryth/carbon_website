@@ -1,8 +1,9 @@
-@use "./variables";
-@use "./mixins";
-@use "./font";
-@use "./nav";
-@use "./section";
-@use "./footer";
-@use "../scss/calculateSection/calculate.scss";
-@use "../scss/calculateSection/CO2Result.scss";
+@import "./variables";
+@import "./mixins";
+@import "./font";
+@import "./nav";
+@import "./section";
+@import "./landing_page";
+@import "./footer";
+@import "../scss/calculateSection/calculate.scss";
+@import "../scss/calculateSection/CO2Result.scss";
