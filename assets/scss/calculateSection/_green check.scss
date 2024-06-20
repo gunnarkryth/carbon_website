@@ -2,36 +2,36 @@
 @use "../variables";
 .wrapper {
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: variables.$bg-color;
     display: flex;
     flex-direction: column;
     text-align: center;
-    @include font-setup(var(--font-family), 20px, var(--font-weight), var(--font-color));
-    @include responsive-padding(var(--padding), 0 20px);
+    @include font-setup(variables.$font-family, 20px, variables.$font-weight, variables.$font-color);
+    @include responsive-padding(variables.$padding, 0 20px);
   
-    .green-check {
-      stroke-width: var(--border-width);
-      border: var(--border-width) solid var(--border-color);
-      background-color: var(--check-bg-color);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--check-color);
-      aspect-ratio: 1;
-      margin-right: 11px;
-      padding: 32px;
-      @include font-setup(var(--font-family), var(--font-size));
+    // .green-check {
+    //   stroke-width: var(--border-width);
+    //   border: var(--border-width) solid var(--border-color);
+    //   background-color: var(--check-bg-color);
+    //   border-radius: 50%;
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   color: var(--check-color);
+    //   aspect-ratio: 1;
+    //   margin-right: 11px;
+    //   padding: 32px;
+    //   @include font-setup(var(--font-family), var(--font-size));
   
-      @media (max-width: 991px) {
-        padding: 0 20px;
-      }
-    }
+    //   @media (max-width: 991px) {
+    //     padding: 0 20px;
+    //   }
+    // }
   
     .info-header {
       margin-top: -3px;
       padding-right: 15px;
-      @include font-setup(var(--info-header-font-family), var(--info-header-font-size));
+      @include font-setup(variables.$info-header-font-family, variables.$info-header-font-size);
   
       @media (max-width: 991px) {
         max-width: 100%;
@@ -41,7 +41,7 @@
     }
   
     .description {
-      font-family: var(--description-font-family);
+      font-family: variables.$description-font-family;
       margin-top: 59px;
   
       @media (max-width: 991px) {
@@ -51,14 +51,14 @@
     }
   
     .url-input {
-      font-family: var(--font-family);
+      font-family: variables.$font-family;
       border-radius: 77px;
-      background-color: var(--url-input-bg-color);
+      background-color: variables.$url-input-bg-color;
       margin-top: 84px;
       width: 765px;
       max-width: 100%;
       align-items: start;
-      color: var(--url-input-color);
+      color: variables.$url-input-color;
       white-space: nowrap;
       justify-content: center;
       padding: 22px 53px;
@@ -71,14 +71,14 @@
     }
   
     .check-button {
-      font-family: var(--font-family);
+      font-family: variables.$font-family;
       border-radius: 77px;
-      background-color: var(--check-button-bg-color);
+      background-color: variables.$check-button-bg-color;
       margin-top: 36px;
       width: 234px;
       max-width: 100%;
       align-items: center;
-      color: var(--check-button-color);
+      color: variables.$check-button-color;
       white-space: nowrap;
       justify-content: center;
       padding: 13px 60px;
@@ -90,10 +90,10 @@
     }
   
     .sub-text {
-      @include font-setup(var(--font-family), 16px, normal, var(--sub-text-color));
+      @include font-setup(variables.$font-family, 16px, normal, variables.$sub-text-color);
     }
   
     .main-text {
-      @include font-setup(var(--font-family), 36px, normal, var(--main-text-color));
+      @include font-setup(variables.$font-family, 36px, normal, variables.$main-text-color);
     }
   }
