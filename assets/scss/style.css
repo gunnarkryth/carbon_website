@@ -1,3 +1,5 @@
+/*green check*/
+/*green check*/
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -7,6 +9,10 @@ body {
   font-family: "Ubuntu Mono", monospace;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -74,6 +80,8 @@ nav * {
   text-align: center;
 }
 
+/*green check*/
+/*green check*/
 body {
   font-style: normal;
   font-weight: 400;
@@ -257,6 +265,8 @@ body {
   }
 }
 
+/*green check*/
+/*green check*/
 body {
   font-style: normal;
   font-weight: 400;
