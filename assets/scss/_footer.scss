@@ -1,0 +1,44 @@
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  background-color: $background_dark;
+  padding: 0 7vw 0 7vw;
+  color: $text_white;
+  color: $text_white;
+  #contact_info_container {
+    ul {
+      padding: 0;
+      list-style: none;
+      li {
+        font-style: normal;
+      }
+    }
+  }
+  #made_possible_by_container {
+    color: $text_white;
+  }
+  #newsletter_container {
+    input {
+      display: block;
+      margin: 5px;
+      border: none;
+      border-radius: 1000px;
+      background-color: $text_light;
+      padding: 5px 1rem 5px 1rem;
+      color: $background_dark;
+    }
+    button {
+      margin: 5px;
+      border: 1px solid $text_light;
+      border-radius: 1000px;
+      background: none;
+      padding: 5px 1rem 5px 1rem;
+      color: $text_light;
+    }
+  }
+  #logo_container {
+    .circle3 {
+        @include circle($background_dark, 300px)
+    }
+  }
+}
