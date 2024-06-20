@@ -1,0 +1,13 @@
+nav {
+  & {
+    background-color: $background_dark;
+    background-color: #006769;
+    text-align: center;
+    text-decoration: none;
+    * {
+      background-color: #006769;
+
+      color: $text_light;
+    }
+  }
+}

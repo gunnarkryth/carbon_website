@@ -1,1 +1,201 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  text-decoration: none;
+  text-align: center;
+}
+#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+  border-radius: 77px;
+  background: #40a578;
+  border: 0;
+  color: #ffffff;
+}
+
+.green-check-circle,
+.section-circle {
+  position: absolute;
+  left: 6%;
+  bottom: -8%;
+  background: #40a578;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  border: 9px solid #a5dd9b;
+}
+@media (min-width: 1300px) {
+  .green-check-circle,
+  .section-circle {
+    left: 3%;
+    bottom: -14%;
+    width: 175px;
+    height: 175px;
+    border: 6px solid #a5dd9b;
+  }
+}
+.green-check-circle h3,
+.section-circle h3 {
+  text-align: center;
+  padding-top: 0.25rem;
+  color: #e6ff94;
+  font-size: 19px;
+}
+@media (min-width: 1300px) {
+  .green-check-circle h3,
+  .section-circle h3 {
+    padding-top: 3.7rem;
+    font-weight: 300;
+  }
+}
+
+#calculate {
+  background: #a5dd9b;
+  padding: 0rem 0.4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  height: 75vh;
+}
+@media (min-width: 1300px) {
+  #calculate {
+    height: 69vh;
+  }
+}
+#calculate .calculate-header {
+  text-align: center;
+}
+#calculate .calculate-header h2 {
+  color: #40a578;
+  text-transform: uppercase;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-header h2 {
+    font-size: 34px;
+  }
+}
+#calculate .calculate-header h3 {
+  width: 350px;
+  color: #006769;
+  font-size: 20px;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-header h3 {
+    font-size: 25px;
+    width: 400px;
+  }
+}
+#calculate .calculate-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container {
+    gap: 2rem;
+  }
+}
+#calculate .calculate-container .co2-header {
+  width: 320px;
+  text-align: center;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .co2-header {
+    padding-right: 17rem;
+  }
+}
+#calculate .calculate-container .co2-header p {
+  width: 340px;
+  color: #006769;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .co2-header p {
+    width: 650px;
+    font-size: 19px;
+  }
+}
+#calculate .calculate-container .input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container {
+    gap: 1.6rem;
+  }
+}
+#calculate .calculate-container .input-container .website-input {
+  width: 272px;
+  height: 21.61px;
+  padding: 0.2rem 0.3rem;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container .website-input {
+    width: 500px;
+    height: 34px;
+  }
+}
+#calculate .calculate-container .input-container .website-input::-moz-placeholder {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 13px;
+}
+#calculate .calculate-container .input-container .website-input::placeholder {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 13px;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container .website-input::-moz-placeholder {
+    text-align: left;
+    padding-left: 1.9rem;
+  }
+  #calculate .calculate-container .input-container .website-input::placeholder {
+    text-align: left;
+    padding-left: 1.9rem;
+  }
+}
+#calculate .calculate-container .input-container #calculate-website {
+  width: 150px;
+  height: 26px;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+#calculate .calculate-container .input-container #calculate-website:hover {
+  cursor: pointer;
+}
+@media (min-width: 1300px) {
+  #calculate .calculate-container .input-container #calculate-website {
+    width: 200px;
+    height: 30px;
+  }
+}
+
+#calculate-result {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  width: 70%;
+  background: #40a578;
+}/*# sourceMappingURL=style.css.map */
