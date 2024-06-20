@@ -215,7 +215,7 @@ body {
 .section-circle h3 {
   text-align: center;
   padding-top: 0.25rem;
-  color: #e6ff94;
+  color: #a5dd9b;
   font-size: 19px;
 }
 
@@ -244,7 +244,7 @@ body {
 }
 #calculate .carbon-circle {
   position: absolute;
-  left: 4%;
+  left: 3%;
   top: -14%;
   background: #a5dd9b;
   border-radius: 50%;
@@ -606,6 +606,6 @@ body {
 #resources .mission-circle h2 {
   text-align: center;
   padding-top: 3.3rem;
-  color: #e6ff94;
+  color: #a5dd9b;
   font-weight: 300;
 }
