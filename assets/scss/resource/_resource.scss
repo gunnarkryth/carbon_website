@@ -1,0 +1,54 @@
+@use "../variables";
+@use "../mixins";
+@use "../font";
+@use "../placeholder";
+
+#resources {
+    background: variables.$background_light;
+    @include mixins.calculateFlexbox(row, space-evenly, center, 0.7rem);
+    color: variables.$text_dark;
+
+    .left-side {
+        @include mixins.calculateFlexbox(column, flex-start, center, 0.7rem);
+        .resources-header {
+
+            h2 {
+                font-size: 45px;
+            }
+        }
+
+        .resources-info {
+            p {
+                width: 350px;
+            }
+
+            .resources-points {
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                li {
+                    
+                    a {
+                        color: variables.$text_dark;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .big-circle-container {
+        display: block;
+
+        .big-circle {
+            display: block;
+            background: transparent;
+            width: 33vw;
+            height: 33vw;
+            border-radius: 50%;
+            border: 4px solid variables.$background_dark;
+        }
+    }
+}
