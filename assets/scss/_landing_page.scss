@@ -7,16 +7,19 @@
 }
 .circle_container {
   h1 {
-    -webkit-text-stroke-width: 4px;
-    -webkit-text-stroke-color: $background_dark;
     position: absolute;
     top: 33%;
     left: 33%;
     transform: translate(-50%, -50%);
     z-index: 11;
     width: 3em;
+    -webkit-text-stroke-color: $background_dark;
+    -webkit-text-stroke-width: 4px;
     color: $text_light;
     font-size: 128px;
+    @media (max-width: 400px) {
+      font-size: 1rem;
+    }
   }
   .circle1 {
     top: 50%;
@@ -32,12 +35,12 @@
     color: $text_light;
     font-size: 2rem;
     @include circle($background_dark, 300px);
-    border-color: $text_light;
     justify-content: center;
     align-items: center;
+    border-color: $text_light;
     p {
       margin-top: 7rem;
-    text-align: center;
+      text-align: center;
     }
   }
 }
