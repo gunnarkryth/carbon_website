@@ -201,6 +201,22 @@ body {
     height: 69vh;
   }
 }
+#calculate .carbon-circle {
+  position: absolute;
+  left: 4%;
+  top: -14%;
+  background: #a5dd9b;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  border: 6px solid #40a578;
+  font-weight: 300;
+}
+#calculate .carbon-circle h2 {
+  text-align: center;
+  padding-top: 3.3rem;
+  color: #006769;
+}
 #calculate .calculate-header {
   text-align: center;
 }
@@ -469,7 +485,7 @@ body {
   align-items: center;
   gap: 0.7rem;
   color: #006769;
-  overflow: hidden;
+  position: relative;
 }
 #resources .left-side {
   display: flex;
@@ -504,4 +520,36 @@ body {
   height: 33vw;
   border-radius: 50%;
   border: 4px solid #40a578;
+}
+#resources .matters-circle {
+  position: absolute;
+  left: 2%;
+  top: -14%;
+  background: #a5dd9b;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  border: 6px solid #40a578;
+  font-weight: 300;
+}
+#resources .matters-circle h2 {
+  text-align: center;
+  padding-top: 3.3rem;
+  color: #006769;
+}
+#resources .mission-circle {
+  position: absolute;
+  left: 2%;
+  bottom: -13%;
+  background: #40a578;
+  border-radius: 50%;
+  width: 175px;
+  height: 175px;
+  border: 6px solid #a5dd9b;
+}
+#resources .mission-circle h2 {
+  text-align: center;
+  padding-top: 3.3rem;
+  color: #e6ff94;
+  font-weight: 300;
 }
