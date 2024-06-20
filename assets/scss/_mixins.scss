@@ -10,3 +10,19 @@
   align-items: $align;
   gap: $gap;
 }
+
+/*green check*/
+@mixin font-setup($font-family, $font-size, $font-weight: normal, $color: black) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin responsive-padding($desktop-padding, $mobile-padding) {
+  padding: $desktop-padding;
+
+  @media (max-width: 991px) {
+    padding: $mobile-padding;
+  }
+}

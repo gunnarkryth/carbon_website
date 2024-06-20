@@ -1,0 +1,99 @@
+@use "../mixins";
+@use "../variables";
+.wrapper {
+    align-items: center;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include font-setup(var(--font-family), 20px, var(--font-weight), var(--font-color));
+    @include responsive-padding(var(--padding), 0 20px);
+  
+    .green-check {
+      stroke-width: var(--border-width);
+      border: var(--border-width) solid var(--border-color);
+      background-color: var(--check-bg-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--check-color);
+      aspect-ratio: 1;
+      margin-right: 11px;
+      padding: 32px;
+      @include font-setup(var(--font-family), var(--font-size));
+  
+      @media (max-width: 991px) {
+        padding: 0 20px;
+      }
+    }
+  
+    .info-header {
+      margin-top: -3px;
+      padding-right: 15px;
+      @include font-setup(var(--info-header-font-family), var(--info-header-font-size));
+  
+      @media (max-width: 991px) {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 40px;
+      }
+    }
+  
+    .description {
+      font-family: var(--description-font-family);
+      margin-top: 59px;
+  
+      @media (max-width: 991px) {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+  
+    .url-input {
+      font-family: var(--font-family);
+      border-radius: 77px;
+      background-color: var(--url-input-bg-color);
+      margin-top: 84px;
+      width: 765px;
+      max-width: 100%;
+      align-items: start;
+      color: var(--url-input-color);
+      white-space: nowrap;
+      justify-content: center;
+      padding: 22px 53px;
+  
+      @media (max-width: 991px) {
+        margin-top: 40px;
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+  
+    .check-button {
+      font-family: var(--font-family);
+      border-radius: 77px;
+      background-color: var(--check-button-bg-color);
+      margin-top: 36px;
+      width: 234px;
+      max-width: 100%;
+      align-items: center;
+      color: var(--check-button-color);
+      white-space: nowrap;
+      justify-content: center;
+      padding: 13px 60px;
+  
+      @media (max-width: 991px) {
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+  
+    .sub-text {
+      @include font-setup(var(--font-family), 16px, normal, var(--sub-text-color));
+    }
+  
+    .main-text {
+      @include font-setup(var(--font-family), 36px, normal, var(--main-text-color));
+    }
+  }
