@@ -8,9 +8,15 @@ body {
 }
 
 nav {
-  text-decoration: none;
+  background-color: #a5dd9b;
+  padding: 1rem;
   text-align: center;
 }
+nav * {
+  color: #006769;
+  text-decoration: none;
+}
+
 #calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;

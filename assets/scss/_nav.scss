@@ -1,13 +1,13 @@
+@use "./variables" as *;
+@import "./variables";
 nav {
   & {
-    background-color: $background_dark;
-    background-color: #006769;
+    background-color: $background_light;
+    padding: 1rem;
     text-align: center;
-    text-decoration: none;
     * {
-      background-color: #006769;
-
-      color: $text_light;
+      color: #006769;
+      text-decoration: none;
     }
   }
 }
