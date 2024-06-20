@@ -7,9 +7,11 @@
     background: variables.$background_light;
     @include mixins.calculateFlexbox(row, space-evenly, center, 0.7rem);
     color: variables.$text_dark;
+    overflow: hidden;
 
     .left-side {
         @include mixins.calculateFlexbox(column, flex-start, center, 0.7rem);
+        overflow: hidden;
         .resources-header {
 
             h2 {
@@ -40,8 +42,7 @@
     }
 
     .big-circle-container {
-        display: block;
-
+        overflow: hidden;
         .big-circle {
             display: block;
             background: transparent;

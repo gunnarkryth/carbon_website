@@ -469,6 +469,7 @@ body {
   align-items: center;
   gap: 0.7rem;
   color: #006769;
+  overflow: hidden;
 }
 #resources .left-side {
   display: flex;
@@ -476,6 +477,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 0.7rem;
+  overflow: hidden;
 }
 #resources .left-side .resources-header h2 {
   font-size: 45px;
@@ -493,7 +495,7 @@ body {
   color: #006769;
 }
 #resources .big-circle-container {
-  display: block;
+  overflow: hidden;
 }
 #resources .big-circle-container .big-circle {
   display: block;
