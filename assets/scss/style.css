@@ -28,6 +28,8 @@ nav * {
 }
 
 .circle_container h1 {
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #40a578;
   position: absolute;
   top: 33%;
   left: 33%;
