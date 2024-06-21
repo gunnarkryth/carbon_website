@@ -1,8 +1,25 @@
 @use "./variables";
 
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 %calculate-input {
   border-radius: 77px;
   background: variables.$background_dark;
   border: 0;
   color: variables.$text_white;
+}
+
+%responsive-padding {
+  @media (max-width: 991px) {
+    padding: 0 20px;
+  }
 }

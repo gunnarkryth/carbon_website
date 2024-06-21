@@ -61,3 +61,16 @@
     padding: $mobile-padding;
   }
 }
+
+//The Mission
+@mixin responsive-font-size($size) {
+  @media (max-width: 991px) {
+    font-size: $size;
+  }
+}
+
+@mixin responsive-margin-top($margin) {
+  @media (max-width: 991px) {
+    margin-top: $margin;
+  }
+}
