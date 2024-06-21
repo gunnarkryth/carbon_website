@@ -1,0 +1,24 @@
+.up-circle-container {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 100%;
+  z-index: 999;
+
+  .up-circle {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    z-index: 999;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: 900;
+      color: #000;
+    }
+  }
+}
