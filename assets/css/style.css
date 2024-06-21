@@ -502,6 +502,26 @@ body {
   color: #e6ff94;
   width: 30%;
 }
+@media (max-width: 991px) {
+  #calculate-result {
+    padding: 0.2rem 0.5rem;
+  }
+}
+#calculate-result h2,
+#calculate-result h4 {
+  text-align: center;
+}
+@media (max-width: 991px) {
+  #calculate-result h2,
+#calculate-result h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  #calculate-result {
+    width: 60%;
+  }
+}
 #calculate-result button {
   position: absolute;
   top: 0;
@@ -513,6 +533,13 @@ body {
   height: 30px;
   color: #a5dd9b;
   text-align: center;
+}
+#calculate-result button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+#calculate-result footer {
+  margin-bottom: 16rem;
 }
 
 /*green check*/
