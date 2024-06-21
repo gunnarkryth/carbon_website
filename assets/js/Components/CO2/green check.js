@@ -69,7 +69,7 @@ scearchbutton.addEventListener("click", () => {
   if (fixedAddress === "") {
     clearContainer();
     let emptyUrl = `<h2>Please enter a url in the input</h2>`;
-    dataContainer.innerHTML += fixedAddress;
+    dataContainer.innerHTML += emptyUrl;
   } else {
     getGreenData(fixedAddress);
   }

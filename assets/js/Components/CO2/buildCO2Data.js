@@ -1,8 +1,11 @@
-const CO2Container = document.getElementById("calculate-result");
+const resultContainer = document.getElementById("calculate");
+
+const CO2Container = document.createElement("div");
+CO2Container.id = "calculate-result";
 
 export const buildCO2Data = async (CO2) => {
   console.log(CO2);
-  clearContainer();
+  resultContainer.appendChild(CO2Container);
   let CO2Element = `
     <header>
         <span class="close-container">
@@ -47,5 +50,5 @@ export const showDataError = async () => {
 };
 
 const clearContainer = () => {
-  CO2Container.innerHTML = "";
+  resultContainer.removeChild(CO2Container);
 };

@@ -3,14 +3,18 @@
 @use "../font";
 @use "../placeholder";
 
+body {
+  overflow-x: hidden;
+}
+
 #resources {
   background: variables.$background_light;
   @include mixins.calculateFlexbox(row, space-evenly, center, 0.7rem);
   color: variables.$text_dark;
   position: relative;
   height: 70vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  // overflow-x: hidden;
+  // overflow-y: hidden;
 
   .left-side {
     @include mixins.calculateFlexbox(column, flex-start, center, 0.7rem);
@@ -57,7 +61,7 @@
       bottom: -2%;
       width: 100px;
       height: 100px;
-      border: 6px solid variables.$background_light;
+      border: 6px solid variables.$background_dark;
     }
 
     h2 {
@@ -69,7 +73,16 @@
         text-align: center;
         padding-top: 0.5rem;
         font-weight: 300;
+        font-size: 16px;
+        padding-top: 1.6rem;
+        color: variables.$text_dark;
       }
+    }
+  }
+
+  @media (max-width: 700px) {
+    .small-circles-container {
+      margin-top: 2rem;
     }
   }
 

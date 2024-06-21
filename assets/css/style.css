@@ -51,11 +51,11 @@ nav * {
 @media (max-width: 991px) {
   .circle_container h1 {
     font-size: 2rem;
-    background: red;
     top: 40%;
     left: 40%;
     color: #e6ff94;
     width: 9rem;
+    -webkit-text-stroke-color: #e6ff94;
   }
 }
 .circle_container .circle1 {
@@ -629,6 +629,11 @@ body {
     height: 2rem;
   }
 }
+@media (max-width: 700px) {
+  .wrapper .check-button {
+    margin-bottom: 7rem;
+  }
+}
 .wrapper .sub-text {
   color: rgb(64, 165, 120);
   font-weight: normal;
@@ -675,6 +680,10 @@ body {
     padding: 0 20px;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 #resources {
   background: #a5dd9b;
   display: flex;
@@ -685,8 +694,6 @@ body {
   color: #006769;
   position: relative;
   height: 70vh;
-  overflow-x: hidden;
-  overflow-y: hidden;
 }
 #resources .left-side {
   display: flex;
@@ -728,7 +735,7 @@ body {
     bottom: -2%;
     width: 100px;
     height: 100px;
-    border: 6px solid #a5dd9b;
+    border: 6px solid #40a578;
   }
 }
 #resources .matters-circle h2 {
@@ -741,6 +748,14 @@ body {
     text-align: center;
     padding-top: 0.5rem;
     font-weight: 300;
+    font-size: 16px;
+    padding-top: 1.6rem;
+    color: #006769;
+  }
+}
+@media (max-width: 700px) {
+  #resources .small-circles-container {
+    margin-top: 2rem;
   }
 }
 #resources .mission-circle {
@@ -966,4 +981,27 @@ body {
   .mission-section .image-container .main-image {
     margin-top: 40px;
   }
+}
+
+.up-circle-container {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 100%;
+  z-index: 999;
+}
+.up-circle-container .up-circle {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  z-index: 999;
+  text-align: center;
+}
+.up-circle-container .up-circle a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 900;
+  color: #000;
 }
