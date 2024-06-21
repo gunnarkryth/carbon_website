@@ -20,11 +20,11 @@
     @media (max-width: 991px) {
       & {
         font-size: 2rem;
-        background: red; //Text is there but not showing?
         top: 40%;
         left: 40%;
         color: $text_light;
         width: 9rem;
+        -webkit-text-stroke-color: $text_light;
       }
     }
   }
@@ -34,7 +34,7 @@
     transform: translate(-50%, -50%);
     @include circle($background_dark, 760px);
     border-color: $text_light;
-    
+
     @media (max-width: 991px) {
       & {
         z-index: 95;
