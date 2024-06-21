@@ -4,6 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   font-style: normal;
   font-weight: 400;
@@ -145,6 +146,9 @@ footer #newsletter_container input {
 footer #newsletter_container input::-moz-placeholder {
   color: #40a578;
 }
+footer #newsletter_container input:-ms-input-placeholder {
+  color: #40a578;
+}
 footer #newsletter_container input::placeholder {
   color: #40a578;
 }
@@ -233,7 +237,7 @@ body {
 
 @media (max-width: 991px) {
   .green-check-circle,
-  .section-circle {
+.section-circle {
     left: 3%;
     bottom: -11%;
     width: 100px;
@@ -251,7 +255,7 @@ body {
 
 @media (max-width: 991px) {
   .green-check-circle h3,
-  .section-circle h3 {
+.section-circle h3 {
     text-align: center;
     padding-top: 0.5rem;
     font-weight: 300;
@@ -389,6 +393,12 @@ body {
   font-size: 15px;
   line-height: 13px;
 }
+#calculate .calculate-container .input-container .website-input:-ms-input-placeholder {
+  text-align: center;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 13px;
+}
 #calculate .calculate-container .input-container .website-input::placeholder {
   text-align: center;
   color: #ffffff;
@@ -397,6 +407,10 @@ body {
 }
 @media (min-width: 1300px) {
   #calculate .calculate-container .input-container .website-input::-moz-placeholder {
+    text-align: left;
+    padding-left: 1.9rem;
+  }
+  #calculate .calculate-container .input-container .website-input:-ms-input-placeholder {
     text-align: left;
     padding-left: 1.9rem;
   }
@@ -590,6 +604,10 @@ body {
   gap: 0.7rem;
   color: #006769;
   position: relative;
+  height: 70vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 999;
 }
 #resources .left-side {
   display: flex;
@@ -613,17 +631,6 @@ body {
 }
 #resources .left-side .resources-info .resources-points li a {
   color: #006769;
-}
-#resources .big-circle-container {
-  overflow: hidden;
-}
-#resources .big-circle-container .big-circle {
-  display: block;
-  background: transparent;
-  width: 33vw;
-  height: 33vw;
-  border-radius: 50%;
-  border: 4px solid #40a578;
 }
 #resources .matters-circle {
   position: absolute;
@@ -688,4 +695,44 @@ body {
     padding-top: 0.5rem;
     font-weight: 300;
   }
+}
+
+/*green check*/
+/*green check*/
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
+}
+
+#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+  border-radius: 77px;
+  background: #40a578;
+  border: 0;
+  color: #ffffff;
+}
+
+.big-circle-container {
+  display: none;
+}
+@media (min-width: 1300px) {
+  .big-circle-container {
+    display: block;
+    overflow: hidden;
+  }
+}
+.big-circle-container .big-circle {
+  position: absolute;
+  top: 80%;
+  right: -10%;
+  transform: translate(0, -50%);
+  margin-top: 0;
+  aspect-ratio: 1;
+  background: transparent;
+  width: 48vw;
+  height: 48vw;
+  border-radius: 50%;
+  border: 4px solid #40a578;
 }
