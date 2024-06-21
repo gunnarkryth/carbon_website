@@ -66,5 +66,11 @@ const input = document.querySelector(".url-input");
 scearchbutton.addEventListener("click", () => {
   let inputtekst = input.value;
   let fixedAddress = input.value.replace(/https?:\/\//g, "");
-  getGreenData(fixedAddress);
+  if (fixedAddress === "") {
+    clearContainer();
+    let emptyUrl = `<h2>Please enter a url in the input</h2>`;
+    dataContainer.innerHTML += fixedAddress;
+  } else {
+    getGreenData(fixedAddress);
+  }
 });
