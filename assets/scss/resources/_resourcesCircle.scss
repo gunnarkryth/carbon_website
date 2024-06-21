@@ -25,3 +25,15 @@
     border: 4px solid variables.$background_dark;
   }
 }
+
+#resources {
+  .small-circles-container {
+    display: block;
+
+    .matters-circle {
+      position: absolute;
+      top: -14%;
+      right: 0;
+    }
+  }
+}
