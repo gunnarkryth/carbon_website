@@ -5,6 +5,14 @@ footer {
   padding: 10vh 7vw 10vh 7vw;
   color: $text_white;
   color: $text_white;
+  @media (max-width: 991px) {
+    & {
+      display: flex;
+      justify-content: space-around;
+      padding: 0vh 1vw 0vh 1vw;
+      font-size: 1rem;
+    }
+  }
   #contact_info_container {
     ul {
       padding: 0;
@@ -13,9 +21,19 @@ footer {
         font-style: normal;
       }
     }
+    @media (max-width: 991px) {
+      & {
+        display: none;
+      }
+    }
   }
   #made_possible_by_container {
     color: $text_white;
+    @media (max-width: 991px) {
+      & {
+        display: none;
+      }
+    }
   }
   #newsletter_container {
     input {
