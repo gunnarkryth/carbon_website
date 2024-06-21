@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body {
   font-style: normal;
   font-weight: 400;
@@ -216,6 +217,17 @@ body {
   padding: 0;
 }
 
+.mission-section .image-container, .mission-section .image-column, .mission-section .text-column, .mission-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-section .mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;
@@ -223,6 +235,11 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 991px) {
+  .mission-section .mission-content, .mission-section {
+    padding: 0 20px;
+  }
+}
 .green-check-circle,
 .section-circle {
   position: absolute;
@@ -445,6 +462,17 @@ body {
   padding: 0;
 }
 
+.mission-section .image-container, .mission-section .image-column, .mission-section .text-column, .mission-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-section .mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;
@@ -452,6 +480,11 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 991px) {
+  .mission-section .mission-content, .mission-section {
+    padding: 0 20px;
+  }
+}
 #calculate-result {
   position: absolute;
   top: 100%;
@@ -592,6 +625,17 @@ body {
   padding: 0;
 }
 
+.mission-section .image-container, .mission-section .image-column, .mission-section .text-column, .mission-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-section .mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;
@@ -599,6 +643,11 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 991px) {
+  .mission-section .mission-content, .mission-section {
+    padding: 0 20px;
+  }
+}
 #resources {
   background: #a5dd9b;
   display: flex;
@@ -710,6 +759,17 @@ body {
   padding: 0;
 }
 
+.mission-section .image-container, .mission-section .image-column, .mission-section .text-column, .mission-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-section .mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
   border-radius: 77px;
   background: #40a578;
@@ -717,6 +777,11 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 991px) {
+  .mission-section .mission-content, .mission-section {
+    padding: 0 20px;
+  }
+}
 .big-circle-container {
   display: none;
 }
@@ -740,11 +805,138 @@ body {
   border: 4px solid #40a578;
 }
 
-#resources .small-circles-container {
-  display: block;
+/*green check*/
+/*green check*/
+body {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Ubuntu Mono", monospace;
+  margin: 0;
+  padding: 0;
 }
-#resources .small-circles-container .matters-circle {
+
+.mission-section, .mission-section .text-column, .mission-section .image-column, .mission-section .image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mission-section .mission-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculate .calculate-container .input-container .website-input, #calculate .calculate-container .input-container #calculate-website {
+  border-radius: 77px;
+  background: #40a578;
+  border: 0;
+  color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .mission-section, .mission-section .mission-content {
+    padding: 0 20px;
+  }
+}
+.mission-section {
+  background-color: #40a578;
+  padding: 80px 63px;
+  overflow: hidden;
+}
+.mission-section .mission-title {
+  color: #e6ff94;
+  margin-top: 170px;
+  margin-left: 100px;
+  font: 400 64px "Ubuntu Mono", sans-serif;
+}
+@media (max-width: 991px) {
+  .mission-section .mission-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .mission-section .mission-title {
+    margin-left: 0;
+    margin-bottom: 6rem;
+  }
+}
+.mission-section .mission-content-container {
+  z-index: 10;
+  margin-top: -26px;
+}
+.mission-section .mission-content {
+  gap: 20px;
+}
+@media (max-width: 991px) {
+  .mission-section .mission-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+}
+.mission-section .mission-text {
+  color: #fff;
+  margin-top: 113px;
+  margin-left: 100px;
+  font: 400 20px "Ubuntu Mono", sans-serif;
+}
+@media (max-width: 991px) {
+  .mission-section .mission-text {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .mission-section .mission-text {
+    margin: 0;
+    width: 300px;
+  }
+}
+.mission-section .text-column {
+  line-height: normal;
+  width: 39%;
+}
+@media (max-width: 991px) {
+  .mission-section .text-column {
+    margin-right: 2rem;
+  }
+}
+.mission-section .image-column {
+  line-height: normal;
+  width: 61%;
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  .mission-section .image-column {
+    width: 100%;
+    display: none;
+  }
+}
+.mission-section .image-container {
+  position: relative;
+  border-radius: 50%;
+  border: 4px solid rgb(230, 255, 148);
+  background-color: #40a578;
+  align-items: start;
+  width: 100%;
+  height: 900px;
+  padding: 80px 0 24px;
+  margin-left: 30%;
+}
+.mission-section .image-container .main-image {
   position: absolute;
-  top: -14%;
-  right: 0;
+  top: 70%;
+  left: -10%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  border: 4px solid rgb(230, 255, 148);
+  background-color: #40a578;
+  margin-top: 0;
+  width: 304px;
+  height: 304px;
+  aspect-ratio: 1;
+}
+@media (max-width: 991px) {
+  .mission-section .image-container .main-image {
+    margin-top: 40px;
+  }
 }
