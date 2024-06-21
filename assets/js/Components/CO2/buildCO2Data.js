@@ -17,10 +17,8 @@ export const buildCO2Data = async (CO2) => {
       </header>
       <p>Carbon Intensity: ${CO2.carbon_intensity}. grams per kilowatt-hour</p>
       <p>Carbon Intensity Type: ${CO2.carbon_intensity_type}</p>
-    </span>
-    <footer>
       <h4>Data from: ${CO2.year}</h4>
-    </footer>`;
+    </span>`;
 
   CO2Container.innerHTML += CO2Element;
 
