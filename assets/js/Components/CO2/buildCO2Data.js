@@ -1,9 +1,9 @@
 const resultContainer = document.getElementById("calculate");
-
-const CO2Container = document.createElement("div");
-CO2Container.id = "calculate-result";
+let CO2Container;
 
 export const buildCO2Data = async (CO2) => {
+  CO2Container = document.createElement("div");
+  CO2Container.id = "calculate-result";
   console.log(CO2);
   resultContainer.appendChild(CO2Container);
   let CO2Element = `
